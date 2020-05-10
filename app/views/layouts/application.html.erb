@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <html html lang="it">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>TODO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Camori Cashmere</title>
+    <meta name="description" content="Capi eleganti di maglieria realizzati in puro cashmere o morbida seta. Abiti su misura creati con filati naturali pregiati.">
+    <%= favicon_link_tag  %>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Camori Cashmere">
+    <meta property="og:title" content="Capi e maglieria in puro cashmere o morbida seta.">
+    <meta property="og:description" content="Capi e maglieria in puro cashmere o morbida seta.">
+    <meta property="og:url" content="https://www.camori.it/">
+
+
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
     <%= render 'shared/navbar' %>
