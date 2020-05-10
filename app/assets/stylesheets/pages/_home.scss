@@ -29,3 +29,49 @@
     }
   }
 }
+
+.website-sections {
+  height: 100vh;
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: $white;
+  position: relative;
+
+  .cashmere {
+    position: absolute;
+    background-image: url('camori_cashmere.jpg');
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 0;
+  }
+  .sartoria {
+    position: absolute;
+    background-image: url('camori_sartoria.jpg');
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    right: 0;
+  }
+  .marca {
+    position: absolute;
+    background-image: url('camori_marca.jpg');
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+  }
+  .news {
+    position: absolute;
+    background-image: url('camori_news.jpg');
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+  }
+}
