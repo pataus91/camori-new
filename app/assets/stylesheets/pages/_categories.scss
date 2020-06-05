@@ -1,0 +1,63 @@
+.website-categories {
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+
+  .cashmere, .sartoria, .news, .marca {
+    width: 50%;
+    height: 50%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover !important;
+    z-index: 0;
+    opacity: 0.8;
+    -webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -moz-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -o-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+  }
+
+  .cashmere:hover .background, .sartoria:hover .background, .news:hover .background,
+  .marca:hover .background {
+    opacity: 0.95;
+    -ms-transform: scale(1.04);
+      -webkit-transform: scale(1.04);
+      transform: scale(1.04);
+    webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -moz-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -o-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+  }
+
+  .cashmere .background { background: url('camori_cashmere.jpg') center; background-size: cover; }
+  .sartoria .background { background: url('camori_sartoria.jpg') center; background-size: cover;}
+  .news .background { background: url('camori_news.jpg') center; background-size: cover;}
+  .marca .background { background: url('camori_marca.jpg') center; background-size: cover;}
+
+
+  .category {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .category .title{
+    width: 100%;
+    font-size: 5vw;
+    color: $white;
+  }
+}

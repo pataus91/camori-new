@@ -1,0 +1,52 @@
+.shop-information {
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+
+  .info-section {
+    height: 100vh;
+    min-height: 500px;
+    position: relative;
+    // left: 50%;
+    // top: 50%;
+  }
+
+  .contacts, .opening-hours {
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    background: #ccc5bd;
+  }
+
+  .info {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    .title {
+      // top: 50px;
+      font-size: 5vw;
+      color: $white;
+      margin-bottom: 100px;
+    }
+  }
+
+  .info .subtitle {
+    color: $white;
+    h3 {
+      font-size: 3.5vmin;
+    }
+    p {
+     font-size: 3vmin;
+     font-style: italic;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('camori_header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: $white;
+  h1 {
+    font-size: 8vw;
+  }
+  h3 {
+    font-size: 3.5vmin;
+  }
+
+  @media (max-width: 767px) {
+    h3 {
+      font-size: 4vmin;
+    }
+  }
+}
